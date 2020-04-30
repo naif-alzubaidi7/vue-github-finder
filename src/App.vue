@@ -1,19 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <Navbar  />
+    <router-view/>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Navbar from './components/Navbar.vue'
+ 
+ 
 
-export default {
+ export default {
   name: 'App',
   components: {
-    HelloWorld
+     
+    Navbar
+    
   }
 }
+
+
+ 
 </script>
 
 <style>
@@ -25,4 +33,12 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+</style>
+
+<style>
+  @import './assets/App.css';
+</style>
+
+<style>
+  @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css';
 </style>
